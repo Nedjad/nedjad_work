@@ -1,34 +1,65 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
-using System.Text;
-using System.Threading.Tasks;
+// Удалены неиспользуемые директивы using.
 
 namespace averageTemp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Привет! Давай проверим среднюю температуру за сегодняшний день!");
-            Console.WriteLine("Введи минимальную температуру!");
+            double minTemp;
+            double maxTemp;
 
-            double minTemp = double.Parse(Console.ReadLine());
+            // Программа заключенна в цикл do-while для возможности провести расчёт ещё раз.
+            do
+            {
 
-            Console.WriteLine("А теперь введи максимальную температуру");
+                Console.WriteLine("Привет! Давай проверим среднюю температуру за сегодняшний день!");
 
-            double maxTemp = double.Parse(Console.ReadLine());
+                Console.WriteLine("Введи минимальную температуру: ");
+                minTemp = double.Parse(Console.ReadLine());
 
-            double result = (maxTemp + minTemp) / 2;
+                Console.WriteLine("А теперь введи максимальную температуру: ");
+                maxTemp = double.Parse(Console.ReadLine());
 
-            DateTime dt = new DateTime();
-            dt = DateTime.Now;
-            
+                double result = (maxTemp + minTemp) / 2;
+
+                DateTime dt = new DateTime();
+                dt = DateTime.Now;
+
+                // Условие неправильного ввода температуры
+                if (minTemp > maxTemp)
+                {
+                    Console.WriteLine("Минимальная температура не может быть больше максимальной! ");
+                    Console.ReadLine();
+                    
+                }
+                else
+                { 
+                    Console.WriteLine($"Средняя температура за {dt} равна {result}");
+                    Console.ReadLine();
+                }
+                // блок кода отвечающий за выполнение заново программы.
+                {
+                    Console.WriteLine("Повторим измерение ? д/н");
+
+                    char endOrback = char.Parse(Console.ReadLine());
+
+                    if (endOrback == 'д')
+                    {
+                        continue;
+                    }
+                    else if (endOrback == 'н')
+                    {
+                        Environment.Exit(0x101);
+                    }
+                }
+            } while (minTemp < maxTemp);
 
 
-            Console.WriteLine($"Средняя температура за {dt} равна {result}");
-            Console.ReadLine();
+
+
+
 
 
 
