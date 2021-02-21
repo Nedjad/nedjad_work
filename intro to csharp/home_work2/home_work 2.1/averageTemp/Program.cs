@@ -11,10 +11,10 @@ namespace averageTemp
 
         static void Main()
         {
-            
 
-            double minTemp;
-            double maxTemp; 
+            int minNumber, maxNumber;
+            string minTemp;
+            string maxTemp; 
             int numbMonth;
             // Программа заключенна в цикл do-while для возможности провести расчёт ещё раз.
             do
@@ -23,55 +23,76 @@ namespace averageTemp
                 Console.WriteLine("Привет! Давай проверим среднюю температуру за сегодняшний день и текущий месяц!");
 
                 Console.WriteLine("Введи минимальную температуру: ");
-                minTemp = double.Parse(Console.ReadLine());
+                //minTemp = double.Parse(Console.ReadLine());
+                minTemp = Console.ReadLine();
+
+                bool resultOne = int.TryParse(minTemp, out minNumber);
+
 
                 Console.WriteLine("А теперь введи максимальную температуру: ");
-                maxTemp = double.Parse(Console.ReadLine());
+                //maxTemp = double.Parse(Console.ReadLine());
+                maxTemp = Console.ReadLine();
 
-                Console.WriteLine("Введи порядковый номер месяца.");
-                numbMonth = int.Parse(Console.ReadLine());
+                bool resultTwo = int.TryParse(maxTemp, out maxNumber);
 
-               
-                double result = (maxTemp + minTemp) / 2;
-
-                DateTime dt = new DateTime(1, numbMonth, 1);
-
-
-                if (numbMonth == 12 || numbMonth <= 2 && result > 0)
+                if (resultOne  && resultTwo )
                 {
-                    Console.WriteLine("Сегодня дождливая погода!");
-                }
+                    Console.WriteLine("Введи порядковый номер месяца.");
+                    numbMonth = int.Parse(Console.ReadLine());
 
-                // Условие неправильного ввода температуры
-                if (minTemp > maxTemp)
-                {
-                    Console.WriteLine("Минимальная температура не может быть больше максимальной! ");
-                    Console.ReadLine();
-                    
-                }
-                else 
-                {
-                    
 
-                    Console.WriteLine($"Средняя температура за {dt} равна {result}. Текущий месяц - {dt.ToString("MMMM")}");
-                    Console.ReadLine();
-                }
-                // блок кода отвечающий за повторное выполнение программы.
-                {
-                    Console.WriteLine("Повторим измерение ? д/н");
+                    double result = (maxNumber + minNumber) / 2;
 
-                    char endOrback = char.Parse(Console.ReadLine());
+                    DateTime dt = new DateTime(1, numbMonth, 1);
 
-                    if (endOrback == 'д')
+
+                    if (numbMonth == 12 || numbMonth <= 2 && result > 0)
                     {
-                        continue;
+                        Console.WriteLine("Сегодня дождливая погода!");
                     }
-                    else if (endOrback == 'н')
+
+
+                    // Условие неправильного ввода температуры
+                    if (minNumber > maxNumber)
                     {
-                        Environment.Exit(0x101);
+                        Console.WriteLine("Минимальная температура не может быть больше максимальной! ");
+                        Console.ReadLine();
+
+                    }
+                    else
+                    {
+
+
+                        Console.WriteLine($"Средняя температура за {dt} равна {result}. Текущий месяц - {dt.ToString("MMMM")}");
+                        Console.ReadLine();
+                    }
+                    // блок кода отвечающий за повторное выполнение программы.
+                    {
+                        Console.WriteLine("Повторим измерение ? д/н");
+
+                        char endOrback = char.Parse(Console.ReadLine());
+
+                        if (endOrback == 'д')
+                        {
+                            continue;
+                        }
+                        else if (endOrback == 'н')
+                        {
+                            Environment.Exit(0x101);
+                        }
                     }
                 }
-            } while (minTemp < maxTemp);
+                else
+                {
+                    Console.WriteLine("Неверный тип данных!");
+                    Console.ReadLine();
+
+                    
+
+                    
+
+                }
+            } while (minNumber < maxNumber);
 
 
 
