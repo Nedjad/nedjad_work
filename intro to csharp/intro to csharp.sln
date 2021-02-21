@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "home_work1", "home_work1\ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "averageTemp", "home_work2\home_work 2.1\averageTemp\averageTemp.csproj", "{04ACC443-C1EA-4C33-BAB2-FD82CCDF3CCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "evenNumber_2.3", "evenNumber_2.3\evenNumber_2.3.csproj", "{BC932D64-F3FF-4CC4-9048-D09D6FBDF911}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{04ACC443-C1EA-4C33-BAB2-FD82CCDF3CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04ACC443-C1EA-4C33-BAB2-FD82CCDF3CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04ACC443-C1EA-4C33-BAB2-FD82CCDF3CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC932D64-F3FF-4CC4-9048-D09D6FBDF911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC932D64-F3FF-4CC4-9048-D09D6FBDF911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC932D64-F3FF-4CC4-9048-D09D6FBDF911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC932D64-F3FF-4CC4-9048-D09D6FBDF911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
