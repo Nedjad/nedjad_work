@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{523DBCAC-C1D4-4641-9F77-11C9C831CCC4}</ProjectGuid>
+    <ProjectGuid>{A3124103-5A31-4F7B-BB39-C39CBAF3E67E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>monthNumb</RootNamespace>
-    <AssemblyName>monthNumb</AssemblyName>
+    <RootNamespace>check_2._3</RootNamespace>
+    <AssemblyName>check_2.3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
