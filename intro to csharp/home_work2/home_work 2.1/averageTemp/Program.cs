@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 // Удалены неиспользуемые директивы using.
 
@@ -11,6 +7,7 @@ namespace averageTemp
 {
     class Program
     {
+        // Данный проект является домашним заданием под номером 2.1, 2.2 и 2.5
 
         static void Main()
         {
@@ -37,8 +34,13 @@ namespace averageTemp
                
                 double result = (maxTemp + minTemp) / 2;
 
-                DateTime dt = new DateTime();
-                dt = DateTime.Now;
+                DateTime dt = new DateTime(1, numbMonth, 1);
+
+
+                if (numbMonth == 12 || numbMonth <= 2 && result > 0)
+                {
+                    Console.WriteLine("Сегодня дождливая погода!");
+                }
 
                 // Условие неправильного ввода температуры
                 if (minTemp > maxTemp)
@@ -47,9 +49,11 @@ namespace averageTemp
                     Console.ReadLine();
                     
                 }
-                else
-                { 
-                    Console.WriteLine($"Средняя температура за {dt} равна {result}. Текущий месяц - {numbMonth}");
+                else 
+                {
+                    
+
+                    Console.WriteLine($"Средняя температура за {dt} равна {result}. Текущий месяц - {dt.ToString("MMMM")}");
                     Console.ReadLine();
                 }
                 // блок кода отвечающий за повторное выполнение программы.

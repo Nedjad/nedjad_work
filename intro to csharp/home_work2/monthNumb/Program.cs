@@ -38,7 +38,7 @@ namespace monthNumb
             DateTime dt = new DateTime(1, number, 1);
 
             
-            Console.WriteLine($"Текущий месяц:а {dt.ToString("MMMM")}");
+            Console.WriteLine($"Текущий месяц: {dt.ToString("MMMM")}");
             Console.ReadLine();
 
             
