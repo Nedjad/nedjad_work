@@ -24,7 +24,7 @@ namespace evenNumber_2._3
 
                 bool result = int.TryParse(numberStr, out number);
 
-                int percent = number - (number / b) * b;
+                int percent = number % b;
 
                 if (result)
                 {
