@@ -10,16 +10,30 @@ namespace homeWork_3._3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите ваш текст.");
+            string userStr, revStr = "";
+            int i, l;
 
-            string userText = Console.ReadLine();
+            
 
-            Console.WriteLine(userText.Reverse().ToArray());
+            Console.Write("Введите строку: ");
+            userStr = Console.ReadLine();
+
+            l = userStr.Length - 1;
+            
+            for (i = l; i >= 0; i--)
+            {
+
+                revStr = revStr + userStr[i];
+
+
+            }
+
+            Console.WriteLine($"Введённая строка наоборот: {revStr}");
             Console.ReadLine();
 
 
 
-            
+
         }
     }
 }
