@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homeWork_3.3", "homeWork_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seaBattle", "seaBattle\seaBattle.csproj", "{D0F04AA2-8C62-4539-99B3-0B118597073F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homeWork_4.1", "homeWork_4.1\homeWork_4.1.csproj", "{D6903333-CD1A-4623-BA4C-1BB09F9F457F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{D0F04AA2-8C62-4539-99B3-0B118597073F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0F04AA2-8C62-4539-99B3-0B118597073F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0F04AA2-8C62-4539-99B3-0B118597073F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6903333-CD1A-4623-BA4C-1BB09F9F457F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6903333-CD1A-4623-BA4C-1BB09F9F457F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6903333-CD1A-4623-BA4C-1BB09F9F457F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6903333-CD1A-4623-BA4C-1BB09F9F457F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
