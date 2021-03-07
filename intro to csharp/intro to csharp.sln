@@ -23,7 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seaBattle", "seaBattle\seaB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homeWork_4.1", "homeWork_4.1\homeWork_4.1.csproj", "{D6903333-CD1A-4623-BA4C-1BB09F9F457F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homeWork_4.2", "homeWork_4.2\homeWork_4.2.csproj", "{F6EFEC5F-199C-4131-88BA-22994723DD81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "homeWork_4.2", "homeWork_4.2\homeWork_4.2.csproj", "{F6EFEC5F-199C-4131-88BA-22994723DD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homeWork_4.3", "homeWork_4.3\homeWork_4.3.csproj", "{198EBE7F-D737-44F8-B302-9A4AE6C35792}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{F6EFEC5F-199C-4131-88BA-22994723DD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6EFEC5F-199C-4131-88BA-22994723DD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6EFEC5F-199C-4131-88BA-22994723DD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198EBE7F-D737-44F8-B302-9A4AE6C35792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198EBE7F-D737-44F8-B302-9A4AE6C35792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198EBE7F-D737-44F8-B302-9A4AE6C35792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198EBE7F-D737-44F8-B302-9A4AE6C35792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
